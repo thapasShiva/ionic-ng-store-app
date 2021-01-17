@@ -1,0 +1,7 @@
+{
+  "name": "ionic-ng-store-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
