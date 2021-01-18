@@ -1,15 +1,35 @@
-<ion-content color=primary>
-
+<ion-content class="ion-no-padding">
+  <section class="d-flex flex-col h-screen">
+    <div class="top-content">
+      <ion-grid class="ion-no-padding">
+        <ion-row class="ion-no-padding">
+          <ion-col class="ion-no-padding">
+            <section class="ion-padding-horizontal ion-padding-vertical">
+              <h1 class="font-bold antialiased text-white text-4xl">Furnish</h1>
+              <p class="leading-6 text-gray-100 font-extralight antialiased">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolores non similique eius beatae ad? Mollitia doloribus fuga
+                error velit delectus magnam sed maxime sint iusto exercitationem
+                aliquam ducimus, reprehenderit laudantium.
+              </p>
+            </section>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="footer-content">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="ion-padding-horizontal">
+            <ion-button color="primary" expand="block" fill="outline"
+              >Get Started</ion-button
+            >
+          </ion-col>
+          <ion-col size="12" class="ion-padding-horizontal">
+            <ion-button color="primary" expand="block" [routerLink]="['/login-page']">Login</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
 </ion-content>
-
-
-<!-- 
-
-  https://uidesigndaily.com/posts/sketch-membership-ui-components-cards-code-verification-day-1199
-  
-  #242C45
-#F3F3FB
-#959AAC
-#7C7C8C
-#7F848C
-#B4B4BD -->
