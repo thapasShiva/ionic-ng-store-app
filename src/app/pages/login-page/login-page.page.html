@@ -1,0 +1,58 @@
+<ion-content>
+  <section class="d-flex flex-col content-end justify-end self-end h-full">
+    <ion-grid class="top-content">
+      <ion-row>
+        <ion-col size="12" class="ion-padding-horizontal">
+          <h1 class="font-bold antialiased text-2xl leading-norma p-0 m-0">Let's sign you in</h1>
+          <p class="text-gray-500 leading-norma p-0 m-0">To continue, verify your crendentials</p>
+        </ion-col>
+        <ion-col size="12" class="ion-padding-horizontal ion-padding-vertical">
+          <ion-item class="ion-no-padding">
+            <ion-label position="stacked">Email Address</ion-label>
+            <ion-input placeholder="Enter Email" autofocus required></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-padding-horizontal ion-padding-vertical">
+          <ion-item class="ion-no-padding">
+            <ion-label position="stacked">Password</ion-label>
+            <ion-input placeholder="Enter Password" require="true"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" class="ion-padding-horizontal ion-padding-vertical">
+          <p class="text-right antialiased leading-normal">
+            <ion-text color="primary" [routerLink]="['/forgot-password-page']">
+              <span class="underline font-normal">Forgot Password?</span>
+            </ion-text>
+          </p>
+        </ion-col>
+        <ion-col
+          size="12"
+          class="my-2 ion-padding-horizontal ion-padding-vertical"
+        >
+          <ion-button
+            color="primary"
+            expand="block"
+            [routerLink]="['/login-page']"
+            >Login</ion-button
+          >
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
+</ion-content>
+<ion-footer class="bg-white">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-padding-horizontal">
+        <p
+          class="text-gray-500 text-center antialiased font-extralight leading-normal"
+        >
+          Don't have an account?
+          <ion-text color="primary" [routerLink]="['/registration-page']">
+            <span class="underline font-normal" >Register</span>
+          </ion-text>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

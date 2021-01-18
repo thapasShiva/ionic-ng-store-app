@@ -1,0 +1,21 @@
+  ion-content {
+      --background: none;
+      //   background-image: url('https://picsum.photos/800/480');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: linear-gradient(to right, #272727ba, #1a1818cc), url(https://picsum.photos/1280/853/?random=1) no-repeat top center;
+  }
+
+
+
+  .top-content {
+      flex: 2;
+      display: inline-flex;
+      align-items: flex-end;
+  }
+
+  .footer-content {
+      flex: .75 !important;
+
+  }
