@@ -1,0 +1,38 @@
+<ion-header class="ion-no-border" [translucent]="true">
+
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Categories</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color="tertiary">
+
+  <ion-row class="">
+    <ion-col class="">
+      <section class="">
+        <ion-list class="bg-color">
+          <ng-container *ngFor="let category of categoryList">
+            <ion-card>
+              <ion-item>
+                <ion-thumbnail slot="start">
+                  <img class="h-full" src="assets/images/categories/{{category.title.toLowerCase()}}.jpg">
+                </ion-thumbnail>
+                <ion-label>
+                  <p><span class="text-lg font-medium">{{category.title}}</span></p>
+                  <p>{{category.no_of_items}} items</p>
+                </ion-label>
+              </ion-item>
+            </ion-card>
+          </ng-container>
+         
+         
+
+        </ion-list>
+      </section>
+    </ion-col>
+  </ion-row>
+</ion-content>

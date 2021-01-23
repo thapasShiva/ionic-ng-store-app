@@ -1,10 +1,13 @@
   ion-content {
       --background: none;
-      //   background-image: url('https://picsum.photos/800/480');
-      background-position: center top;
+      background: linear-gradient(to bottom, #7c7c7c21, #2a2635ea), url("/assets/images/get_started.jpg") no-repeat top center;
+    //   background-image: url("/assets/images/get_started.jpg");
+      background-position: top center;
+      max-width: 100%;
+      max-height: auto;
       background-repeat: no-repeat;
       background-size: cover;
-      background: linear-gradient(to right, #272727ba, #1a1818cc), url(https://picsum.photos/1280/853/?random=1) no-repeat top center;
+     
   }
 
 

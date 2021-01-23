@@ -1,0 +1,17 @@
+.card {
+    width: 96px;
+    min-width: 96px;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 48px;
+    // height: 104px;
+    display: flex;
+}
+
+.svg-icon-sm{
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #F4F3F9;
+    border-radius: 50%;
+    padding: .5rem;
+}

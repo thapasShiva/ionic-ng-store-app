@@ -1,42 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Ionic App</title>
 
-    <base href="/" />
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
 
-    <meta name="color-scheme" content="light dark" />
-    <meta
-      name="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
+  <base href="/" />
 
-    <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-    
-    <!-- add to homescreen for ios -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/base-style.css" crossorigin="anonymous" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
 
-    <style>
-      * {
-        font-family: "Poppins", sans-serif !important;
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
+    integrity="sha512-+WF6UMXHki/uCy0vATJzyA9EmAcohIQuwpNz0qEO+5UeE5ibPejMRdFuARSrl1trs3skqie0rY/gNiolfaef5w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/base-style.css" crossorigin="anonymous" />
+
+  <style>
+    * {
+      font-family: "Poppins", sans-serif !important;
+    }
+
+    @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+
+      html,body {
+        width: 412px !important;
+        min-width: 412px !important;
+        max-width: 412px !important;
+        margin: 0 auto;
       }
-    </style>
-  </head>
 
-  <body>
+      .screen-width {
+        width: 412px !important;
+        min-width: 412px !important;
+        max-width: 412px !important;
+      }
+    }
+
+    @media screen and (min-device-width: 1600px) and (max-device-width: 1920px) and (-webkit-min-device-pixel-ratio: 1) {
+      html,body {
+        width: 412px !important;
+        min-width: 412px !important;
+        max-width: 412px !important;
+        margin: 0 auto;
+      }
+
+      .screen-width {
+        width: 412px !important;
+        min-width: 412px !important;
+        max-width: 412px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="screen-width">
     <app-root></app-root>
-  </body>
+  </section>
+</body>
+
 </html>

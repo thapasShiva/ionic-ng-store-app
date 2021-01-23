@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=home-page.page.css.map */
+.scrolling-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+/*# sourceMappingURL=home-page.page.css.map */

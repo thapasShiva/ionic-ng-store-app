@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAC,AAAA,UAAU,AAAA,OAAO,CAAC;EACd,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,WAAW;CAChC;;AAED,AAAA,UAAU,CAAA;EACN,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,GAAG;CACf;;AAED,AAAA,SAAS,CAAC;EACN,gBAAgB,EAAE,OAAO;CAC5B",
+    "sources": [
+        "viewall-categories-page.page.scss"
+    ],
+    "names": [],
+    "file": "viewall-categories-page.page.css"
+}
