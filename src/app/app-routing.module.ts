@@ -30,6 +30,18 @@ const routes: Routes = [
     path: 'forgot-password-page',
     loadChildren: () => import('./pages/forgot-password-page/forgot-password-page.module').then( m => m.ForgotPasswordPagePageModule)
   },
+  {
+    path: 'viewall-categories-page',
+    loadChildren: () => import('./pages/viewall-categories-page/viewall-categories-page.module').then( m => m.ViewallCategoriesPagePageModule)
+  },
+  {
+    path: 'loader-page',
+    loadChildren: () => import('./pages/loader-page/loader-page.module').then( m => m.LoaderPagePageModule)
+  },
+  {
+    path: 'view-single-item-page',
+    loadChildren: () => import('./pages/view-single-item-page/view-single-item-page.module').then( m => m.ViewSingleItemPagePageModule)
+  },
 
 ];
 

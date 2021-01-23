@@ -3,8 +3,14 @@
     <ion-grid class="top-content">
       <ion-row>
         <ion-col size="12" class="ion-padding-horizontal">
-          <h1 class="font-bold antialiased text-2xl leading-norma p-0 m-0">Let's sign you in</h1>
-          <p class="text-gray-500 leading-norma p-0 m-0">To continue, verify your crendentials</p>
+          <ion-text color="secondary">
+            <h1 class="font-bold antialiased text-2xl leading-norma p-0 m-0">
+              Let's sign you in
+            </h1>
+          </ion-text>
+          <p class="text-gray-500 leading-norma p-0 m-0">
+            To continue, verify your crendentials
+          </p>
         </ion-col>
         <ion-col size="12" class="ion-padding-horizontal ion-padding-vertical">
           <ion-item class="ion-no-padding">
@@ -32,8 +38,43 @@
           <ion-button
             color="primary"
             expand="block"
-            [routerLink]="['/login-page']"
+            [routerLink]="['/loader-page']"
             >Login</ion-button
+          >
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" class="ion-padding-horizontal">
+          
+          <p class="text-gray-300 leading-norma p-0 m-0 text-center">
+            Or Login with
+          </p>
+        </ion-col>
+         
+        <ion-col
+          size="6"
+          class="my-2 ion-padding-horizontal ion-padding-vertical"
+        >
+          <ion-button
+            color="secondary"
+            expand="block"
+            fill="outline"
+            >Google
+            <ion-icon slot="start" name="logo-google" size="small"></ion-icon>
+            </ion-button
+          >
+        </ion-col>
+        <ion-col
+          size="6"
+          class="my-2 ion-padding-horizontal ion-padding-vertical"
+        >
+          <ion-button
+            color="secondary"
+            expand="block"
+            fill="outline"
+            >Facebook
+            <ion-icon slot="start" name="logo-facebook" size="small"></ion-icon>
+            </ion-button
           >
         </ion-col>
       </ion-row>
@@ -49,7 +90,7 @@
         >
           Don't have an account?
           <ion-text color="primary" [routerLink]="['/registration-page']">
-            <span class="underline font-normal" >Register</span>
+            <span class="underline font-normal">Register</span>
           </ion-text>
         </p>
       </ion-col>

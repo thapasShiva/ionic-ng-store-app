@@ -1,9 +1,104 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>home-page</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-toolbar>
+  <ion-title color="secondary">Furnish</ion-title>
+  <ion-buttons slot="secondary">
+    <ion-button>
+      <ion-icon
+        slot="icon-only"
+        name="person-circle-outline"
+        color="primary"
+      ></ion-icon>
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="icon-only" name="cart-outline" color="primary"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
 
-<ion-content>
+<ion-content color="tertiary">
+  <section class="d-flex flex-col h-screen">
+    <ion-grid class="max-w-full">
+      <ion-row class="">
+        <ion-col class="">
+          <section class="">
+            <article>
+              <img src="https://picsum.photos/512/300" />
+            </article>
+          </section>
+        </ion-col>
+      </ion-row>
+      <ion-row class="">
+        <ion-col class="">
+          <section class="d-flex justify-between items-baseline">
+            <ion-text color="secondary">
+              <h4 class="">Categories</h4>
+            </ion-text>
+            <ion-text
+              color="primary"
+              [routerLink]="['/viewall-categories-page']"
+            >
+              <p class="mr-2">View All</p>
+            </ion-text>
+          </section>
+        </ion-col>
+      </ion-row>
+      <ion-row class="">
+        <ion-col class="">
+          <section class="">
+            <div class="scrolling-wrapper py-2">
 
+              <ng-container *ngFor="let category of categoryList">
+                <app-category-component title={{category.title}}></app-category-component>
+              </ng-container>
+             
+             
+            </div>
+          </section>
+        </ion-col>
+      </ion-row>
+      <ion-row class="">
+        <ion-col class="">
+          <section class="d-flex justify-between items-baseline">
+            <ion-text color="secondary">
+              <h4 class="">Trending</h4>
+            </ion-text>
+            <ion-text
+              color="primary"
+              [routerLink]="['/viewall-categories-page']"
+            >
+              <p class="mr-2">View All</p>
+            </ion-text>
+          </section>
+        </ion-col>
+      </ion-row>
+      <ion-row class="">
+        <ion-col class="">
+          <section class="">
+            <ion-list>
+            
+              <ng-container *ngFor="let trendingItem of trendingList">
+                <ion-item button (click)="gotoPage()" detail>
+                  <ion-thumbnail slot="start">
+                    <img src="https://picsum.photos/id/167/64/64">
+                  </ion-thumbnail>
+                  
+                  <ion-label class="ion-text-wrap">
+                    <ion-text color="primary">
+                      <h3 ><span class="text-base">{{trendingItem.title}}</span></h3>
+                    </ion-text>
+                    <ion-text color="secondary">
+                      <p ><span class="text-sm">{{trendingItem.price}}</span></p>
+                    </ion-text>
+                    
+                    
+                    </ion-label>  
+                </ion-item>
+              </ng-container>
+              
+             
+            </ion-list>
+          </section>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </section>
 </ion-content>

@@ -1,5 +1,8 @@
 .top-content {
     flex: 2;
     display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
     align-items: flex-end;
 }
